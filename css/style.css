@@ -1,0 +1,41 @@
+/*****************************************
+NAVIGATION
+*****************************************/
+
+
+.navbar {
+
+}
+
+.logo_in_slider {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  z-index: 1;
+}
+
+.logo_in_slider img{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.features {
+  text-align:  center;
+}
+
+.features h1{
+  border-bottom: 2px solid grey;
+  display: inline-block;
+  text-align:  center;
+  margin-top: 2em;
+}
+
+footer {
+  height: 100px;
+
+}
+
+/*#carouselExampleControls{
+  margin-top: -1em;
+
+}*/
