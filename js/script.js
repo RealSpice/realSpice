@@ -1,10 +1,4 @@
-// When the DOM is ready, run this function
 $(document).ready(function() {
-
-  document.querySelectorAll('.cocoen').forEach(function(element){
-    new Cocoen(element);
-  });
-
 
 
   $(window).on("scroll",function(){

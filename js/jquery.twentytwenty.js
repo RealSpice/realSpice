@@ -1,3 +1,4 @@
+
 (function($){
 
   $.fn.twentytwenty = function(options) {
@@ -101,8 +102,8 @@
         container.addClass("active");
         offsetX = container.offset().left;
         offsetY = container.offset().top;
-        imgWidth = beforeImg.width(); 
-        imgHeight = beforeImg.height();          
+        imgWidth = beforeImg.width();
+        imgHeight = beforeImg.height();
       };
       var onMove = function(e) {
         if (container.hasClass("active")) {

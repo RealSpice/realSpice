@@ -753,10 +753,11 @@ Retouching
 *****************************************/
 
 .retouching .comparison {
-  margin: 0 auto;
+  /*margin: 0 auto;
   max-width: 600px;
   width: 100%;
-  height: auto;
+  height: auto;*/
+  min-height: 50px;
   margin-bottom: 50px;
 
 }
@@ -811,4 +812,10 @@ Contact
 
  .contact-form, .about-me {
    margin-top:50px;
+ }
+
+ .loading {
+   margin: 100px 0;
+   width: 75px;
+   height: 50px;
  }

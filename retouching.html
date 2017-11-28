@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.event.move.js" type="text/javascript"></script>
     <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
@@ -87,7 +88,9 @@
   <div class="col-12 text-center">
     <h1 class="title">Retouching</h1>
   </div>
-
+  <div class="text-center">
+  <img src="img/loading.gif" class="loading">
+</div>
   <div class="comparison">
     <img src="img/comparison/compare-4.jpg" alt="Exterrior photo">
     <img src="img/comparison/compare-3.jpg" alt="Exterrior photo retouched">
@@ -107,6 +110,7 @@
 </div>
 </section>
 
+</div>
 
 
 <footer class="footer">
@@ -159,6 +163,7 @@
     <p class="text-center">&copy; 2017 Real Spice</p>
 </footer>
 
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104467292-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -169,9 +174,15 @@
 </script>
 
 <script>
-$(function(){
-  $(".comparison").twentytwenty();
-});</script>
 
+$('.comparison').hide();
+$('.comparison').imagesLoaded( function() {
+            $('.comparison').show();
+            $('.loading').hide();
+            $('.comparison').twentytwenty();
+        });
+
+
+</script>
 </body>
 </html>
