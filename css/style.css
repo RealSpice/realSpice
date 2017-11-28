@@ -131,12 +131,12 @@ h1, h2, h3, h4{
 
 
 .title {
-  padding: 2px 0px 30px;
-  display: inline-block;
-  text-align: center;
-  margin-top: .5em;
-  margin-bottom: 60px;
-  position: relative;
+  padding: 25px 0px 15px;
+    display: inline-block;
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .title:before {
@@ -218,6 +218,7 @@ services
 }
 
 .services p{
+  padding: 30px;
   position: absolute;
   display: none;
   color: black;
@@ -251,6 +252,11 @@ services
 Features
 *****************************************/
 
+.features {
+  padding-bottom: 0;
+  position: relative;
+}
+
 .features .title:before {
     background: white;
 }
@@ -278,14 +284,16 @@ Features
 .f-height {
     vertical-align: baseline;
     margin-bottom: 60px;
+    margin-top: 35px;
 }
 
 .features .title {
   color: white;
+  margin-bottom: 40px;
 }
 
 .features p, .feature-wrap p{
-  margin-top: 10px;
+  margin-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
   opacity: 1;
@@ -539,7 +547,17 @@ footer .form-control,  .btn {
 
 
 
-@media (max-width:992px){
+@media (max-width:991px){
+  body{
+    padding-top: 2.5rem;
+  }
+
+  nav .svg1 {
+    max-width: 70px;
+    padding: 5px;
+    max-height: 70px;
+}
+
   #navbarNav ul li a{
     padding-left: 16px;
   }
@@ -595,9 +613,14 @@ photography-gallery
   text-align: center;
 }
 
+.photography-gallery p{
+      margin-top: 30px;
+}
+
 /*****************************************
 Photography
 *****************************************/
+
 .photo-bg {
   padding: 0;
   position: relative;
@@ -681,7 +704,6 @@ Photography
 
 .link-to-action h1{
     padding-bottom: 1em;
-    text-decoration: underline;
 }
 
 .link-to-action{
@@ -779,9 +801,11 @@ Contact
 }
 
 .about-me img{
+  margin-bottom: 30px;
   max-height: 300px;
 }
  .contact .f-height p{
+   padding-top: 30px;
    color: white;
  }
 
