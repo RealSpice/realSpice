@@ -6,14 +6,15 @@
   <meta name="description" content="Real estate retouching"/>
   <meta name="keywords" content="Real estate, retouching"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <script src="js/cocoen-jquery.min.js"></script>
-    <script src="js/cocoen.min.js"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cocoen.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -87,20 +88,22 @@
     <h1 class="title">Retouching</h1>
   </div>
 
-  <div class="cocoen">
-    <img src="img/comparison/compare-1.jpg" alt="Apartment picture">
-    <img src="img/comparison/compare-2.jpg" alt="Apartment picture">
+  <div class="comparison">
+    <img src="img/comparison/compare-4.jpg" alt="Exterrior photo">
+    <img src="img/comparison/compare-3.jpg" alt="Exterrior photo retouched">
   </div>
 
-  <div class="cocoen">
-    <img src="img/comparison/compare-5.jpg" alt="Club picture">
-    <img src="img/comparison/compare-6.jpg" alt="Club picture">
+  <div class="comparison">
+    <img src="img/comparison/compare-5.jpg" alt="Room with window and sofa unretouched">
+    <img src="img/comparison/compare-6.jpg" alt="Room with window and sofa retouched">
   </div>
 
-    <div class="cocoen" style="padding-bottom: 0;">
-      <img src="img/comparison/compare-9.jpg" alt="Stairs picture">
-      <img src="img/comparison/compare-10.jpg" alt="Stairs picture">
-    </div>
+  <div class="comparison" style="padding-bottom: 0;">
+    <img src="img/comparison/compare-1.jpg" alt="Apartment photo unretouched">
+    <img src="img/comparison/compare-2.jpg" alt="Apartment photo retouched">
+  </div>
+
+
 </div>
 </section>
 
@@ -164,6 +167,11 @@
 
   gtag('config', 'UA-104467292-1');
 </script>
+
+<script>
+$(function(){
+  $(".comparison").twentytwenty();
+});</script>
 
 </body>
 </html>

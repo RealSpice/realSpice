@@ -752,12 +752,12 @@ top:-60px;
 Retouching
 *****************************************/
 
-.retouching .cocoen {
+.retouching .comparison {
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
   height: auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
 }
 
